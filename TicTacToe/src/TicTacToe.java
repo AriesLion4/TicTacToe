@@ -6,17 +6,32 @@ public class TicTacToe
 		static String xo;
 		public static void main(String[] args)
 			{
-			//welcomeMessage();
-              Board.displayBoard();
-              Board.prepareBoard();
+			welcomeMessage();
+			
+			Board.prepareBoard();
+			Board.displayBoard();
+			int counter = 0;
+			while(counter < 9)
+				{
+		PlayerMove.askPlayer();
+		PlayerMove.playerInput();
+		Board.displayBoard();
+		OpponentInput.askopponent();
+		Board.displayBoard();
+				}
+           
+				
 			}
+		
+           
+           
+			
 
 		public static void welcomeMessage()
 			{
 				
 				System.out.println("Welcome to Tic Tac Toe!");
-				System.out.println("What would You like to be X or O?");
-				xo = userStringInput.nextLine();
+				
 				
 				
 				
