@@ -18,6 +18,7 @@ public class TicTacToe
 		Board.displayBoard();
 		OpponentInput.askopponent();
 		Board.displayBoard();
+  counter++;
 				}
            
 				
